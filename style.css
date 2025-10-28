@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+}
+
+header {
+  width: 100%;
+  max-width: 1440px;
+  height: 60px;
+  background-color: #4caf50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+header h1 {
+  color: black;
+  letter-spacing: 4px;
+}
+
+nav {
+  height: 100%;
+}
+
+nav ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 15px;
+  letter-spacing: 2px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.hero{
+    width: 100%;
+    max-width: 1440px;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.hero-about{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+}
+
+.hero-about h1{
+    font-size: 58px;
+    font-weight: 700;
+    color: #333;
+}
+
+.hero-about p{
+    letter-spacing: 2px;
+}
+
+.hero-about button{
+    width: 150px;
+    height: 40px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-image-wrapper{
+    /* height:400px; */
+}
+
+.hero-image-wrapper img{
+    height: 100%;
+    width: 100%;
+}
