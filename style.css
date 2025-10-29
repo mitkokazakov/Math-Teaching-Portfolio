@@ -20,7 +20,7 @@ header {
   width: 100%;
   max-width: 1440px;
   height: 60px;
-  background-color: #4caf50;
+  background-color: rgba(222, 218, 206, 1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,52 +56,134 @@ nav ul li a {
   transition: color 0.3s ease;
 }
 
-.hero{
+.hero {
+  width: 100%;
+  max-width: 1440px;
+  background: linear-gradient(
+    90deg,
+    rgba(222, 218, 206, 1) 0%,
+    rgba(245, 243, 233, 1) 69%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px 50px 0px 50px;
+}
+
+.hero-about {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: start;
+}
+
+.hero-about h1 {
+  font-size: 58px;
+  font-weight: 700;
+  color: #333;
+}
+
+.hero-about p {
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.hero-about-job-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.hero-about-job-wrapper span {
+  width: 50px;
+  height: 3px;
+  background-color: #333;
+}
+
+.hero-about button {
+  padding: 15px 50px;
+  background-color: rgba(245, 243, 233, 1);
+  border: none;
+  border-radius: 15px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-image-wrapper {
+  /* height:400px; */
+}
+
+.hero-image-wrapper img {
+  height: 100%;
+  width: 100%;
+}
+
+.about {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 100px;
+  background-color: rgba(245, 243, 233, 1);
+}
+
+.about-info{
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+}
+
+.about-header{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-header-line{
+  height: 3px;
+  width: 50px;
+  background-color: #333;
+}
+
+.about-skills{
     width: 100%;
-    max-width: 1440px;
-    background-color: bisque;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
-    text-align: center;
-    padding: 0px 20px;
+    gap: 100px;
 }
 
-.hero-about{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: start;
+.about-skills-col{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.hero-about h1{
-    font-size: 58px;
-    font-weight: 700;
-    color: #333;
+.skill{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 3px;
 }
 
-.hero-about p{
-    letter-spacing: 2px;
-}
 
-.hero-about button{
-    width: 150px;
-    height: 40px;
-    background-color: #4caf50;
-    border: none;
-    border-radius: 15px;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.hero-image-wrapper{
-    /* height:400px; */
-}
-
-.hero-image-wrapper img{
-    height: 100%;
-    width: 100%;
+.stars{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  color: orange;
 }
