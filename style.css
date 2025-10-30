@@ -143,7 +143,7 @@ nav ul li a {
   max-width: 1440px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 50px;
   padding: 100px;
   background-color: rgba(245, 243, 233, 1);
@@ -151,12 +151,17 @@ nav ul li a {
 }
 
 .about-info{
-  height: 370px;
+  /* height: 370px; */
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
   gap: 30px;
+}
+
+.about-info p{
+  letter-spacing: 2px;
+  line-height: 1.6;
 }
 
 .about-header, .services-header{
