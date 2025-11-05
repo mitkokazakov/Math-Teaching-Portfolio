@@ -20,8 +20,19 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <i class="ri-menu-3-line burger"></i>
         </ul>
       </nav>
+
+      <div class="mobile-nav">
+        <ul>
+          <i class="ri-close-large-line close"></i>
+          <li><a href="/">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </header>
     <div class="hero">
       <div class="hero-about">
@@ -244,7 +255,7 @@
       <div class="contacts">
         <div class="single-contact">
           <i class="ri-map-pin-fill"></i>
-          <p>123 Math St, Number City, 45678</p>
+          <p>Knyaz Boris, Stara Zagora</p>
         </div>
 
         <div class="single-contact">
@@ -264,16 +275,16 @@
       </div>
     </section>
 
-    <script>
-      const header = document.querySelector("header");
+    <script src="app.js">
+      // const header = document.querySelector("header");
 
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 50) {
-          header.classList.add("scrolled");
-        } else {
-          header.classList.remove("scrolled");
-        }
-      });
+      // window.addEventListener("scroll", () => {
+      //   if (window.scrollY > 50) {
+      //     header.classList.add("scrolled");
+      //   } else {
+      //     header.classList.remove("scrolled");
+      //   }
+      // });
     </script>
   </body>
 </html>
