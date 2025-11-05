@@ -309,6 +309,10 @@ nav ul li a {
   color: #333;
 }
 
+.single-contact p{
+    text-align: center;
+  }
+
 @media screen and (max-width: 1024px) {
   .contact {
     padding: 50px 50px;
@@ -471,4 +475,6 @@ nav ul li a {
   .single-contact{
     width: 47%;
   }
+
+  
 }
