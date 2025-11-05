@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -34,6 +35,7 @@ header {
   background-color: rgba(222, 218, 206, 0.8); /* Slight transparency */
   backdrop-filter: blur(0px);
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  overflow: hidden;
 }
 
 header.scrolled {
@@ -68,6 +70,7 @@ nav ul {
 
 .mobile-nav {
   display: none;
+  z-index: 900;
 }
 
 nav ul li {
@@ -372,6 +375,11 @@ nav ul li a {
 }
 
 @media screen and (max-width: 680px) {
+
+  header{
+    padding: 10px 40px 10px 40px;
+  }
+
   nav ul li {
     display: none;
   }
@@ -382,24 +390,30 @@ nav ul li a {
     cursor: pointer;
   }
 
+  .close{
+    padding-right: 20px;
+  }
+
   .burger.hide{
     display: none;
   }
 
   .mobile-nav {
     display: block;
-    position: absolute;
+    position: fixed;
     width: 200px;
     height: 100vh;
     top: 0;
-    right: -200px;
+    right: 0;
     transition: all 0.5s ease;
     background-color: rgba(222, 218, 206, 0.7);
     backdrop-filter: blur(10px);
+    transform: translateX(100%);
+    z-index: 900;
   }
 
   .mobile-nav.hidden {
-    right: 0px;
+    transform: translateX(0);
   }
 
   .mobile-nav ul {
@@ -409,10 +423,11 @@ nav ul li a {
     gap: 50px 40px;
     height: 100%;
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px 0 0;
   }
 
   .mobile-nav ul li {
+    /* width: 100%; */
     list-style: none;
     margin: 0 15px;
     letter-spacing: 2px;
@@ -424,5 +439,36 @@ nav ul li a {
     font-weight: 500;
     font-size: 16px;
     transition: color 0.3s ease;
+  }
+
+  .hero-about{
+    align-items: center;
+  }
+
+  .about{
+    padding: 40px 20px;
+  }
+
+  .about-info{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  .about-info p{
+    word-wrap: break-word;
+  }
+
+  .single-service {
+    width: 100%;
+  }
+
+  .contacts{
+    flex-wrap: wrap;
+  }
+
+  .single-contact{
+    width: 47%;
   }
 }
