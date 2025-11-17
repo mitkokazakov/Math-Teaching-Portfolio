@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --max-width-var: 1920px;
+}
 
 * {
   padding: 0;
@@ -17,16 +22,16 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  font-family: "Rubik", sans-serif;
+  /* font-family: "Rubik", sans-serif; */
+  font-family: "Quantico", sans-serif;
   font-optical-sizing: auto;
   overflow-x: hidden;
 }
 
 header {
   width: 100%;
-  max-width: 1440px;
+  max-width: var(--max-width-var);
   height: 60px;
-  /* background-color: rgba(222, 218, 206, 1); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,7 +94,7 @@ nav ul li a {
 
 .hero {
   width: 100%;
-  max-width: 1440px;
+  max-width: var(--max-width-var);
   background: linear-gradient(
     90deg,
     rgba(222, 218, 206, 1) 0%,
@@ -157,7 +162,7 @@ nav ul li a {
 
 .about {
   width: 100%;
-  max-width: 1440px;
+  max-width: var(--max-width-var);
   display: flex;
   justify-content: center;
   align-items: start;
@@ -228,7 +233,7 @@ nav ul li a {
 
 .services {
   width: 100%;
-  max-width: 1440px;
+  max-width: var(--max-width-var);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -248,8 +253,8 @@ nav ul li a {
 .services-wrapper {
   width: 100%;
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
   flex-wrap: wrap;
 }
@@ -262,9 +267,12 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 30px;
+  padding: 50px;
   text-align: center;
   transition: transform 0.3s ease;
+  box-shadow: 10px 9px 5px -3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 10px 9px 5px -3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 10px 9px 5px -3px rgba(0, 0, 0, 0.3);
 }
 
 .single-service i {
@@ -278,7 +286,7 @@ nav ul li a {
 
 .contact {
   width: 100%;
-  max-width: 1440px;
+  max-width: var(--max-width-var);
   padding: 100px 50px;
   background-color: seashell;
   display: flex;
@@ -309,9 +317,9 @@ nav ul li a {
   color: #333;
 }
 
-.single-contact p{
-    text-align: center;
-  }
+.single-contact p {
+  text-align: center;
+}
 
 @media screen and (max-width: 1024px) {
   .contact {
@@ -379,8 +387,7 @@ nav ul li a {
 }
 
 @media screen and (max-width: 680px) {
-
-  header{
+  header {
     padding: 10px 40px 10px 40px;
   }
 
@@ -394,11 +401,11 @@ nav ul li a {
     cursor: pointer;
   }
 
-  .close{
+  .close {
     padding-right: 20px;
   }
 
-  .burger.hide{
+  .burger.hide {
     display: none;
   }
 
@@ -445,22 +452,22 @@ nav ul li a {
     transition: color 0.3s ease;
   }
 
-  .hero-about{
+  .hero-about {
     align-items: center;
   }
 
-  .about{
+  .about {
     padding: 40px 20px;
   }
 
-  .about-info{
+  .about-info {
     width: 100%;
     align-items: center;
     justify-content: center;
     padding: 0 10px;
   }
 
-  .about-info p{
+  .about-info p {
     word-wrap: break-word;
   }
 
@@ -468,13 +475,11 @@ nav ul li a {
     width: 100%;
   }
 
-  .contacts{
+  .contacts {
     flex-wrap: wrap;
   }
 
-  .single-contact{
+  .single-contact {
     width: 47%;
   }
-
-  
 }
