@@ -37,19 +37,21 @@ header {
   align-items: center;
   padding: 10px 50px;
   position: fixed;
-  background-color: rgba(222, 218, 206, 0.8); /* Slight transparency */
+  /* background-color: rgba(222, 218, 206, 0.8);  */
+  background-color: #34A0A3;
   backdrop-filter: blur(0px);
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
   overflow: hidden;
 }
 
 header.scrolled {
-  background-color: rgba(222, 218, 206, 0.4);
+  /* background-color: rgba(222, 218, 206, 0.4); */
+  background-color: rgba(52, 160, 163, 0.4);
   backdrop-filter: blur(10px);
 }
 
 header h1 {
-  color: black;
+  color: white;
   letter-spacing: 4px;
 }
 
@@ -86,7 +88,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: 500;
   font-size: 16px;
   transition: color 0.3s ease;
@@ -95,11 +97,12 @@ nav ul li a {
 .hero {
   width: 100%;
   max-width: var(--max-width-var);
-  background: linear-gradient(
+  background-color: #34A0A3;
+  /* background: linear-gradient(
     90deg,
-    rgba(222, 218, 206, 1) 0%,
-    rgba(245, 243, 233, 1) 69%
-  );
+    rgba(52, 160, 163, 100) 0%,
+    rgba(255, 255, 255, 255) 95%
+  ); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -117,12 +120,13 @@ nav ul li a {
 .hero-about h1 {
   font-size: 58px;
   font-weight: 700;
-  color: #333;
+  color: white;
 }
 
 .hero-about p {
   letter-spacing: 2px;
   position: relative;
+  color: white;
 }
 
 .hero-about-job-wrapper {
@@ -135,15 +139,16 @@ nav ul li a {
 .hero-about-job-wrapper span {
   width: 50px;
   height: 3px;
-  background-color: #333;
+  background-color: white;
 }
 
 .hero-about button {
   padding: 15px 50px;
-  background-color: rgba(245, 243, 233, 1);
+  /* background-color: rgba(245, 243, 233, 1); */
+  background-color: #f9b643;
   border: none;
   border-radius: 15px;
-  color: #333;
+  color: white;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
@@ -168,7 +173,8 @@ nav ul li a {
   align-items: start;
   gap: 50px;
   padding: 100px;
-  background-color: rgba(245, 243, 233, 1);
+  /* background-color: rgba(245, 243, 233, 1); */
+  background-color: #34A0A3;
   scroll-margin-top: 60px;
 }
 
@@ -179,6 +185,7 @@ nav ul li a {
   justify-content: start;
   align-items: start;
   gap: 30px;
+  color: white;
 }
 
 .about-info p {
@@ -198,7 +205,7 @@ nav ul li a {
 .services-header-line {
   height: 3px;
   width: 50px;
-  background-color: #333;
+  background-color: white;
 }
 
 .about-skills {
@@ -227,8 +234,8 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2px;
-  color: orange;
+  gap: 8px;
+  color:#f9b643;
 }
 
 .services {
@@ -240,7 +247,8 @@ nav ul li a {
   align-items: start;
   gap: 50px;
   padding: 100px;
-  background-color: rgba(202, 218, 206, 1);
+  /* background-color: rgba(202, 218, 206, 1); */
+  background-color: #34A0A3;
   scroll-margin-top: 60px;
 }
 
@@ -248,6 +256,7 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   align-items: start;
+  color: white;
 }
 
 .services-wrapper {
@@ -261,7 +270,9 @@ nav ul li a {
 
 .single-service {
   width: 30%;
-  background-color: rgba(222, 218, 206, 1);
+  /* background-color: rgba(222, 218, 206, 1); */
+  background-color: #f9b643;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -277,7 +288,7 @@ nav ul li a {
 
 .single-service i {
   font-size: 48px;
-  color: #333;
+  color: white;
 }
 
 .single-service h5 {
@@ -289,12 +300,17 @@ nav ul li a {
   width: 100%;
   max-width: var(--max-width-var);
   padding: 100px 50px;
-  background-color: seashell;
+  /* background-color: seashell; */
+  background-color: #34A0A3;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 100px;
+}
+
+.contact h1{
+  color: white;
 }
 
 .contacts {
@@ -315,11 +331,12 @@ nav ul li a {
 
 .single-contact i {
   font-size: 48px;
-  color: #333;
+  color: white;
 }
 
 .single-contact p {
   text-align: center;
+  color: white;
 }
 
 @media screen and (max-width: 1024px) {
