@@ -144,7 +144,7 @@ nav ul li a {
   background-color: white;
 }
 
-.hero-about button {
+.hero-about a {
   padding: 15px 50px;
   /* background-color: rgba(245, 243, 233, 1); */
   background-color: #f9b643;
@@ -156,6 +156,7 @@ nav ul li a {
   cursor: pointer;
   letter-spacing: 2px;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .hero-image-wrapper {
@@ -349,6 +350,16 @@ nav ul li a {
 .single-contact p {
   text-align: center;
   color: white;
+}
+
+.single-contact a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 @media screen and (max-width: 1024px) {
