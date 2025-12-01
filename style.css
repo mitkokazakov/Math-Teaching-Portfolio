@@ -50,7 +50,7 @@ header.scrolled {
   backdrop-filter: blur(10px);
 }
 
-header h1 {
+header h2 {
   color: white;
   letter-spacing: 4px;
 }
@@ -138,6 +138,13 @@ nav ul li a {
   gap: 15px;
 }
 
+.hero-about-job-wrapper h2{
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
 .hero-about-job-wrapper span {
   width: 50px;
   height: 3px;
@@ -204,8 +211,10 @@ nav ul li a {
   justify-content: center;
 }
 
-.about-info-header-container h1{
+.about-info-header-container h2{
   letter-spacing: 5px;
+  font-size: 28px;
+  
 }
 
 .about-header-line,
@@ -237,6 +246,11 @@ nav ul li a {
   gap: 3px;
 }
 
+.skill h3{
+  font-size: 16px;
+  color: white;
+}
+
 .stars {
   display: flex;
   justify-content: center;
@@ -266,7 +280,9 @@ nav ul li a {
   color: white;
 }
 
-.services-info-header-container h1{
+.services-info-header-container h2{
+  color: white;
+  font-size: 28px;
   letter-spacing: 5px;
 }
 
@@ -303,7 +319,7 @@ nav ul li a {
   color: white;
 }
 
-.single-service h5 {
+.single-service h3 {
   letter-spacing: 2px;
   font-size: 18px;
 }
@@ -321,9 +337,10 @@ nav ul li a {
   gap: 100px;
 }
 
-.contact h1{
+.contact h2{
   color: white;
   letter-spacing: 5px;
+  font-size: 28px;
 }
 
 .contacts {
