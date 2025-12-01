@@ -92,6 +92,7 @@ nav ul li a {
   font-weight: 500;
   font-size: 16px;
   transition: color 0.3s ease;
+  font-weight: bold;
 }
 
 .hero {
@@ -121,6 +122,7 @@ nav ul li a {
   font-size: 58px;
   font-weight: 700;
   color: white;
+  
 }
 
 .hero-about p {
@@ -201,6 +203,10 @@ nav ul li a {
   justify-content: center;
 }
 
+.about-info-header-container h1{
+  letter-spacing: 5px;
+}
+
 .about-header-line,
 .services-header-line {
   height: 3px;
@@ -259,17 +265,22 @@ nav ul li a {
   color: white;
 }
 
+.services-info-header-container h1{
+  letter-spacing: 5px;
+}
+
 .services-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   gap: 30px;
   flex-wrap: wrap;
 }
 
 .single-service {
   width: 30%;
+  /* height: 100%; */
   /* background-color: rgba(222, 218, 206, 1); */
   background-color: #f9b643;
   color: white;
@@ -311,6 +322,7 @@ nav ul li a {
 
 .contact h1{
   color: white;
+  letter-spacing: 5px;
 }
 
 .contacts {
@@ -397,7 +409,7 @@ nav ul li a {
 
   .single-contact i {
     font-size: 32px;
-    color: #333;
+    color: white;
   }
   .single-contact p {
     font-size: 14px;
@@ -417,10 +429,12 @@ nav ul li a {
     display: block;
     font-size: 24px;
     cursor: pointer;
+    color: white;
   }
 
   .close {
     padding-right: 20px;
+    color: white;
   }
 
   .burger.hide {
@@ -435,7 +449,8 @@ nav ul li a {
     top: 0;
     right: 0;
     transition: all 0.5s ease;
-    background-color: rgba(222, 218, 206, 0.7);
+    /* background-color: rgba(222, 218, 206, 0.7); */
+    background-color: rgba(52, 160, 163, 0.4);
     backdrop-filter: blur(10px);
     transform: translateX(100%);
     z-index: 900;
@@ -464,8 +479,8 @@ nav ul li a {
 
   .mobile-nav ul li a {
     text-decoration: none;
-    color: black;
-    font-weight: 500;
+    color: white;
+    font-weight: bold;
     font-size: 16px;
     transition: color 0.3s ease;
   }
@@ -488,6 +503,21 @@ nav ul li a {
   .about-info p {
     word-wrap: break-word;
   }
+
+  .about-skills{
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .about-skills-col {
+    width: 100%;
+    align-items: center;
+  }
+
+  .skill {
+    align-items: center;
+  } 
 
   .single-service {
     width: 100%;
